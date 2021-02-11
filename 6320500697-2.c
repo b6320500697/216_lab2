@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <math.h>
 int main()
 {
     float time,proA=199.00,proB=299.00,pro;
