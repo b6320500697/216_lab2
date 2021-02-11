@@ -12,7 +12,7 @@ int main ()
     if (pro == 'A')
     {
          i = i+199;
-         if (z>200)
+         if (time>200)
         {
         t1 = t1-200;
         i += t1*3;
@@ -21,8 +21,8 @@ int main ()
     }
     else if(pro =='B')
     {
-         y = y+299;
-         if(z>400)
+         i = i+299;
+         if(time>400)
          {
             t1 = t1-400;
             i += t1*2;
