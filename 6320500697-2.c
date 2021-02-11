@@ -14,7 +14,7 @@ int main()
     {
         if(time2<=200)
         {
-            printf("%.2f",proA);
+            pro=proA;
         }
         else
         {
@@ -29,7 +29,7 @@ int main()
     {
         if(time2<=400)
         {
-            printf("%.2f",proB);
+            pro=proB;
         }
         else
         {
