@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    float time,proA,proB;
+    float time,proA=199.00,proB=299.00,pro;
     int time1,time2,time3,time4,time5,se,se1;
     char promotion;
     scanf("%c",&promotion);
@@ -22,8 +22,7 @@ int main()
             time5=time4*60;
             se=time5+time3;
             se1=(se*3)/60;
-            proA=199+se1;
-            printf("%.2f",proA);
+            pro=proA+se1;
         }
     }
     else
@@ -39,9 +38,9 @@ int main()
             time5=time4*60;
             se=time5+time3;
             se1=(se*2)/60;
-            proB=299+se1;
-            printf("%.2f",proB);;
+            pro=proB+se1;
         }
     }
+    printf("%.2f",pro);
     return 0;
 }
