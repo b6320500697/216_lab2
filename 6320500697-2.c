@@ -1,46 +1,32 @@
 #include <stdio.h>
-#include <math.h>
-int main()
+int main ()
 {
-    float time,pro=0;
-    int time1,time2,time3,time4,time5,se,se1;
-    char promotion;
-    scanf("%c",&promotion);
-    scanf("%f",&time);
-    time1=time*100;
-    time2=time1/100;
-    time3=time1%100;
-    if(promotion=='A')
-    {
-        if(time2<=200)
-        {
-            pro=pro+199;
-        }
-        else
-        {
-            time4=time2-200;
-            time5=time4*60;
-            se=time5+time3;
-            se1=(se*3)/60;
-            pro=199+se1;
-        }
-    }
-    else
-    {
-        if(time2<=400)
-        {
-            pro=pro+299;
-        }
-        else
-        {
 
-            time4=time2-400;
-            time5=time4*60;
-            se=time5+time3;
-            se1=(se*2)/60;
-            pro=299+se1;
+ int t1,t2;
+ char a;
+ float z,y=0;
+ scanf ("%c",&a);
+ scanf ("%f",&z);
+ t1 = z;
+ t2 = z*100;
+ t2 = t2%100;
+
+ if (a == 'A'){
+  y = y+199;
+  if (z>200){
+   t1 = t1-200;
+   y += t1*3;
+   y += t2*3/60.0;
+  }
+ }
+ else if(a=='B'){
+        y = y+299;
+        if(z>400){
+            t1 = t1-400;
+            y += t1*2;
+            y += t2*2/60.0;
         }
     }
-    printf("%.2f",pro);
+    printf("%.2f",y);
     return 0;
 }
