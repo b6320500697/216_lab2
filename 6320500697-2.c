@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <math.h>
 int main()
 {
@@ -9,7 +10,6 @@ int main()
     time1=time*100;
     time2=time1/100;
     time3=time1%100;
-    ceil(time2);
     if(promotion=='A')
     {
         if(time2<=200)
